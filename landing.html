@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Link — агентство ролевых мероприятий</title>
+  <link rel="stylesheet" href="landing.css" />
+</head>
+<body>
+  <!-- Бегущая строка -->
+  <div class="ticker-wrap">
+    <div class="ticker-inner" id="tickerEl" aria-live="polite"></div>
+  </div>
+
+  <!-- СТАНДАРТНАЯ НАВИГАЦИЯ (новая) -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo-area">
+        <img src="logo.png" alt="Link logo" class="header-logo" id="headerLogo" />
+        <div class="logo-text">Link</div>
+      </div>
+      
+      <!-- Десктопное меню -->
+      <nav class="desktop-nav" id="desktopNav">
+        <a href="#hero" class="nav-link">Главная</a>
+        <a href="#formats" class="nav-link">Форматы</a>
+        <a href="#how" class="nav-link">Как это</a>
+        <a href="#cases" class="nav-link">Сценарии</a>
+        <a href="#schedule" class="nav-link">Расписание</a>
+        <a href="#order" class="nav-link">Под ключ</a>
+        <a href="#reviews" class="nav-link">Отзывы</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+      
+      <!-- Кнопка бургер-меню для мобильных -->
+      <button class="burger-btn" id="burgerBtn" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    
+    <!-- Раскрывающийся список (мобильное меню) -->
+    <div class="mobile-dropdown" id="mobileDropdown">
+      <a href="#hero" class="dropdown-link">Главная</a>
+      <a href="#formats" class="dropdown-link">Форматы</a>
+      <a href="#how" class="dropdown-link">Как это</a>
+      <a href="#cases" class="dropdown-link">Сценарии</a>
+      <a href="#schedule" class="dropdown-link">Расписание</a>
+      <a href="#order" class="dropdown-link">Под ключ</a>
+      <a href="#reviews" class="dropdown-link">Отзывы</a>
+      <a href="#faq" class="dropdown-link">FAQ</a>
+    </div>
+  </header>
+
+  <!-- Боковая навигация (оставляем как есть, но можно скрыть на мобильных) -->
+  <nav class="thread-nav" id="threadNav" aria-label="Навигация по разделам">
+    <svg id="threadSvg" aria-hidden="true"></svg>
+  </nav>
+
+  <div class="page" id="pageRoot"></div>
+
+  <footer class="footer" id="footerRoot"></footer>
+
+  <script src="landing.js" defer></script>
+</body>
+</html>
